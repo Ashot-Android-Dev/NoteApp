@@ -22,8 +22,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.note.R
-
-
 @Composable
 fun MainScreen(
     modifier: Modifier = Modifier,
@@ -62,7 +60,7 @@ fun MainScreen(
                 onClick = onclick,
                 modifier = Modifier
                     .fillMaxWidth(0.91f)
-                    .padding(bottom = 40.dp),
+                    .padding(bottom = 50.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = colorCont ?: Color.Red
                 )
