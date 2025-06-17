@@ -109,7 +109,7 @@ class NoteViewModel @Inject constructor(private val noteRepository: NoteReposito
         }
     }
     private fun getCurrentData():String{
-        return SimpleDateFormat("dd.MM.yyyy\nHH:mm", Locale.getDefault()).format(Date())
+        return SimpleDateFormat("<<dd.MM.yyyy/ HH:mm>>", Locale.getDefault()).format(Date())
     }
     fun clearFields(){
         title=""

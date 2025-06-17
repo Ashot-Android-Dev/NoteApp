@@ -83,7 +83,7 @@ fun NotesScreen(
         if (lazyListState.isScrollInProgress) {
             showButton = false
         } else {
-            delay(1000)
+            delay(500)
             showButton = true
         }
     }

@@ -8,10 +8,12 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -37,12 +39,15 @@ fun CardNotes(
     onClick: () -> Unit,
 ) {
     val gradient = listOf(MintLight, MintLight, LightSurface)
-    Card(
+    ElevatedCard (
         onClick = onClick,
         modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 4.dp),
         elevation = CardDefaults.cardElevation(6.dp),
+        shape = RoundedCornerShape(
+            topStart = 30.dp, topEnd = 8.dp,
+            bottomStart = 8.dp, bottomEnd = 30.dp)
     ) {
         Column(
             modifier = Modifier

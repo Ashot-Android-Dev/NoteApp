@@ -1,5 +1,6 @@
 package com.example.note.Di.repositoryModule
 
+
 import com.example.note.Model.repository.NoteRepository
 import com.example.note.Model.repository.NoteRepositoryImpl
 import dagger.Binds
@@ -13,3 +14,4 @@ abstract class RepositoryModule {
     @Binds
     abstract fun bindNoteRepository(repository: NoteRepositoryImpl): NoteRepository
 }
+

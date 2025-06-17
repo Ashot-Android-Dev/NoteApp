@@ -95,7 +95,7 @@ fun AddScreen(
                     onClick()
                 },
                 containerColor = LightGreen,
-                contentColor = Color.White
+                contentColor = Color.White,
             ) {
                 Icon(painter = painterResource(R.drawable.save), contentDescription = "save")
             }

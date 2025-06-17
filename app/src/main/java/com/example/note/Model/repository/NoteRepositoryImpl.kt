@@ -25,7 +25,4 @@ class NoteRepositoryImpl @Inject constructor(private val noteDao: NoteDao) : Not
     override suspend fun searchNotes(query: String): List<Note> {
         return noteDao.searchNotes(query)
     }
-
-
-
 }
